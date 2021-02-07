@@ -44,8 +44,6 @@ h4,
 h5,
 h6 {
     margin-bottom: 10px;
-    line-height: 64px;
-    font-weight: 600;
 }
 
 body {
@@ -67,7 +65,8 @@ li {
 }
 
 p {
-    line-height: 1.7;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 a {
@@ -353,6 +352,27 @@ a:hover {
     box-shadow: none;
 }
 
+.btn.v1 {
+    background-color: #E95142;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 24px 40px 22px;
+    border-radius: 0;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.btn.v1:hover {
+    background-color: transparent;
+    color: #E95142;
+    border-color: #E95142;
+}
+
 .section-title {
     text-align: center;
 }
@@ -368,18 +388,18 @@ a:hover {
     line-height: 44px;
     text-transform: capitalize;
     font-weight: 700;
-    margin: 30px 0;
+    padding: 30px 0 40px;
     position: relative;
     display: inline-block;
 }
 
 .section-title h2:after {
     position: absolute;
-    bottom: 0;
+    bottom: -20px;
     left: 50%;
     transform: translateX(-50%);
     content: "";
-    width: 2px;
+    width: 3px;
     height: 36px;
     background: #E95142;
 }
@@ -422,9 +442,9 @@ a:hover {
 .logo {
     width: 30%;
 }
+
 .main-menu {
-    width: 70%
-    text-align: right;
+    width: 70% text-align: right;
 }
 
 .main-menu ul li {
@@ -445,7 +465,8 @@ a:hover {
     font-weight: 500;
     padding: 60px 30px 0;
 }
-.main-menu ul li a.active{
+
+.main-menu ul li a.active {
     color: #fff;
 }
 
@@ -481,6 +502,34 @@ a:hover {
     margin: 160px 0 0;
 }
 
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    position: relative;
+    padding: 0 0 40px;
+    margin: 0 0 30px;
+}
+
+.hero-content h1:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    background-color: #E95142;
+    width: 85px;
+    height: 3px;
+
+}
+
+.hero-content p {
+    margin: 0 0 55px;
+}
+
+.hero-img img {
+    width: 100%;
+}
+
 /*---------------------------------
         Hero CSS
 --------------------------------*/
@@ -490,11 +539,21 @@ a:hover {
 /*---------------------------------
         Feature CSS
 --------------------------------*/
-
+.feature-wrap{
+    padding: 80px 0 250px;
+    position: relative;
+}
+.shape-one{
+    position: absolute;
+    top: 0;
+    left: -200px;
+    z-index: -1;
+}
 .feature-item-wrap {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 65px 0 0;
 }
 
 .feature-item {
@@ -515,7 +574,7 @@ a:hover {
 
 .feature-item a {
     display: block;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 24px;
     font-weight: 700;
     margin: 20px 0;
