@@ -383,9 +383,11 @@ a:hover {
     height: 36px;
     background: #E95142;
 }
-.section-padding{
+
+.section-padding {
     padding: 80px 0;
 }
+
 /*--------------------------------
        Header CSS
 ---------------------------------*/
@@ -414,25 +416,71 @@ a:hover {
 .header-wrap {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
 }
 
 .logo {
     width: 30%;
 }
-
 .main-menu {
     width: 70%
+    text-align: right;
 }
 
 .main-menu ul li {
     display: inline-block;
+    margin: 0 10px;
+}
+
+.main-menu ul li:last-child {
+    margin-right: 0;
+}
+
+.main-menu ul li a {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: capitalize;
+    position: relative;
+    display: block;
+    font-weight: 500;
+    padding: 60px 30px 0;
+}
+.main-menu ul li a.active{
+    color: #fff;
+}
+
+.main-menu ul li a.active:before {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    content: "";
+    background: #E95142;
+    width: 115px;
+    height: calc(100% + 40px);
+    z-index: -1;
+}
+
+.main-menu ul li a.active::after {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    content: "";
+    background: transparent;
+    width: 0;
+    height: 0;
+    border-left: 55px solid transparent;
+    border-right: 55px solid transparent;
+    border-bottom: 17px solid #fff;
 }
 
 /*---------------------------------
         Hero CSS
 --------------------------------*/
+
+.hero-wrap {
+    margin: 160px 0 0;
+}
+
 /*---------------------------------
         Hero CSS
 --------------------------------*/
