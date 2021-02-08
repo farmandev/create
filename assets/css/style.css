@@ -161,7 +161,7 @@ a:hover {
     height: 100%;
     border-style: solid;
     /* Spinner Color */
-    border-color: #32AD79 #32AD79 transparent;
+    border-color: #E95142 #E95142 transparent;
     border-radius: 50%;
     border-width: 6px;
 }
@@ -411,6 +411,7 @@ a:hover {
     font-weight: 700;
     margin: 0 0 35px;
 }
+
 .section-padding {
     padding: 80px 0;
 }
@@ -649,24 +650,28 @@ a:hover {
 /*-----------------------------
     Promo Page CSS
 -----------------------------*/
-.promo-area{
+.promo-area {
     position: relative;
 }
-.shape-three{
+
+.shape-three {
     position: absolute;
     top: 5%;
     right: 0;
 }
-.shape-four{
+
+.shape-four {
     position: absolute;
     top: 26%;
     left: 0;
 }
-.shape-five{
+
+.shape-five {
     position: absolute;
     bottom: 0;
     left: 0;
 }
+
 .promo-hero-wrap {
     position: relative;
     background: #000000;
@@ -738,12 +743,15 @@ a:hover {
     flex-wrap: wrap;
     margin: 0 0 65px;
 }
+
 .promo-item.v1 {
     justify-content: flex-start;
 }
+
 .promo-item.v2 {
     justify-content: flex-end;
 }
+
 .promo-img {
     width: 25%;
 }
@@ -759,9 +767,11 @@ a:hover {
 .promo-item.v1 .promo-text {
     margin: 0 0 0 40px;
 }
+
 .promo-item.v2 .promo-text {
     margin: 0 40px 0 0;
 }
+
 .promo-text h4 {
     font-size: 32px;
     line-height: 44px;
@@ -784,23 +794,142 @@ a:hover {
 .promo-item.v1 .promo-text h4:after {
     left: 0;
 }
+
 .promo-item.v2 .promo-text h4:after {
     right: 0;
 }
-.promo-text p{
+
+.promo-text p {
     margin: 0;
 }
+
 .promo-item.v1 .promo-text h4,
 .promo-item.v1 .promo-text p {
     text-align: left;
 }
+
 .promo-item.v2 .promo-text h4,
 .promo-item.v2 .promo-text p {
     text-align: right;
 }
+
 /*-----------------------------
-    Promo Page CSS
+    About Page CSS
 -----------------------------*/
+.content-wrapper {
+    margin: 170px 0 0;
+}
+
+.about-wrap {
+    padding: 100px 0;
+    position: relative;
+}
+
+.shape-six {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.stat-wrap ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stat-wrap ul li {
+    width: 3%;
+    margin: 0 0.5% 12px;
+}
+
+.stat-wrap ul li img {
+    width: 100%;
+}
+
+
+.stat-text {
+    margin: 60px 0 0;
+    text-align: center;
+}
+
+.stat-text p {
+    font-size: 22px;
+    line-height: 42px;
+}
+.stat-text p span {
+    color: #E85142;
+    font-weight: 700;
+}
+.about-promo {
+    position: relative;
+}
+
+.about-promo:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: #E95142;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+}
+
+.about-promo-content.v1 {
+    padding: 70px 70px 60px 0;
+}
+
+.about-promo-content.v2 {
+    padding: 70px 0px 60px 70px;
+}
+
+.about-promo-content img {
+    max-height: 68px;
+}
+
+.about-promo-content h2 {
+    font-size: 46px;
+    line-height: 53px;
+    font-weight: 700;
+    margin: 35px 0 35px;
+}
+
+.about-promo-content p {
+    font-size: 16px;
+    line-height: 31px;
+    margin: 0 0 30px;
+}
+
+.about-promo-content.v1 h2,
+.about-promo-content.v1 p {
+    color: #fff;
+}
+.book-wrap {
+    position: relative;
+    padding: 100px 0 150px;
+}
+.book-review {
+    position: relative;
+    box-shadow: 0 11px 15px 5px rgba(0, 0, 0, 0.07);
+    padding: 155px 75px 60px;
+    text-align: center;
+    background: #fff;
+}
+
+.book-review p {
+    font-size: 16px;
+    line-height: 31px;
+    margin: 0 0 30px;
+}
+
+.shape-seven {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    z-index: -1;
+}
+
 /*-----------------------------
     Promo Page CSS
 -----------------------------*/

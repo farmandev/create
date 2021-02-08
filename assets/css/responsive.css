@@ -2,7 +2,7 @@
 
 @media only screen and (min-width: 1600px) {}
 
-@media only screen and (min-width: 1280px) and (max-width: 1439px) {
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
 
     .promo-hero-wrap,
     .promo-hero-wrap .container {
@@ -15,6 +15,20 @@
 
     .shape-two {
         max-width: 32%;
+    }
+
+    .shape-six {
+        max-width: 318px;
+    }
+
+    .shape-seven {
+        top: 10%;
+        max-width: 339px;
+    }
+
+    .about-promo-content h2 {
+        font-size: 32px;
+        line-height: 44px;
     }
 }
 
@@ -36,6 +50,29 @@
     .footer-menu ul li {
         margin: 0 12px;
     }
+
+    .shape-six {
+        max-width: 220px;
+    }
+
+    .shape-seven {
+        top: 10%;
+        max-width: 280px;
+    }
+
+    .about-promo-content h2 {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .about-promo-content.v1 {
+        padding: 70px 30px 60px 0;
+    }
+
+    .about-promo-content.v2 {
+        padding: 70px 0 60px 30px;
+    }
+
 
 
 
@@ -88,6 +125,14 @@
 
         padding: 28px 0 0;
     }
+
+    .book-one {
+        position: absolute;
+        top: -75px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
 
 
 }
@@ -146,6 +191,9 @@
         border-left: 35px solid transparent;
         border-right: 35px solid transparent;
         border-bottom: 12px solid #fff;
+    }
+    .hamburger-menu.open::after {
+        display: none;
     }
 
     .header-bar-area.v2 .hamburger-menu::after {
@@ -251,6 +299,7 @@
     .main-menu ul li a {
         font-size: 30px;
         color: #fff;
+        padding: 20px 0;
     }
 
     .hero-wrap {
@@ -291,9 +340,74 @@
         max-width: 400px;
     }
 
+
     .shape-two {
         max-width: 30%;
     }
+
+    .content-wrapper {
+        margin: 88px 0 0;
+    }
+
+    .about-wrap {
+        padding: 50px 0;
+    }
+
+    .stat-text {
+        margin: 27px 0 0;
+    }
+
+    .stat-text p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .book-wrap {
+        padding: 0 0 50px;
+    }
+
+    .book-review {
+        box-shadow: none;
+        padding: 15px 10px 20px;
+        text-align: center;
+        background: #fff;
+    }
+
+    .book-review p {
+        font-size: 14px;
+        line-height: 26px;
+        margin: 0 0 30px;
+    }
+
+    .book-one {
+        position: relative;
+        margin: 0 0 46px;
+    }
+
+
+
+    .about-promo::before {
+
+        width: 100%;
+        height: 56%;
+    }
+
+    .about-promo-content h2 {
+        font-size: 24px;
+        line-height: 32px;
+        margin: 30px 0 30px;
+    }
+
+    .about-promo-content.v1,
+    .about-promo-content.v2 {
+        padding: 60px 0 40px;
+    }
+    .about-promo-content p{
+        font-size: 14px;
+        line-height: 28px;
+    }
+
+
 }
 
 
