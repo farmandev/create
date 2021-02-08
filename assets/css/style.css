@@ -378,7 +378,7 @@ a:hover {
 }
 
 .section-title img {
-    max-width: 220px;
+    max-width: 250px;
     display: block;
     margin: 0 auto;
 }
@@ -442,6 +442,17 @@ a:hover {
 .logo {
     width: 30%;
 }
+.logo a{
+    display: block;
+    transition: 0.3s;
+}
+.logo a img{
+    transition: 0.6s;
+}
+
+.header-bar-area.sticky .logo a img {
+    max-width: 70px;
+}
 
 .main-menu {
     width: 70% text-align: right;
@@ -449,7 +460,7 @@ a:hover {
 
 .main-menu ul li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 6px;
 }
 
 .main-menu ul li:last-child {
@@ -463,9 +474,15 @@ a:hover {
     position: relative;
     display: block;
     font-weight: 500;
-    padding: 60px 30px 0;
+    padding: 60px 0 0;
+    min-width: 115px;
+    text-align: center;
+    transition: 0.4s;
 }
-
+.header-bar-area.sticky  .main-menu ul li a {
+  
+    padding: 28px 0 0;
+}
 .main-menu ul li a.active {
     color: #fff;
 }
@@ -477,29 +494,32 @@ a:hover {
     content: "";
     background: #E95142;
     width: 115px;
-    height: calc(100% + 40px);
+    height: calc(100% + 45px);
     z-index: -1;
 }
 
 .main-menu ul li a.active::after {
     position: absolute;
-    bottom: -25px;
+    bottom: -30px;
     left: 0;
     content: "";
     background: transparent;
     width: 0;
     height: 0;
-    border-left: 55px solid transparent;
-    border-right: 55px solid transparent;
-    border-bottom: 17px solid #fff;
+    border-left: 57px solid transparent;
+    border-right: 57px solid transparent;
+    border-bottom: 13px solid #fff;
 }
+
+
 
 /*---------------------------------
         Hero CSS
 --------------------------------*/
 
 .hero-wrap {
-    margin: 160px 0 0;
+    margin: 170px 0 0;
+    padding: 60px 0;
 }
 
 .hero-content h1 {
@@ -539,16 +559,18 @@ a:hover {
 /*---------------------------------
         Feature CSS
 --------------------------------*/
-.feature-wrap{
+.feature-wrap {
     padding: 80px 0 250px;
     position: relative;
 }
-.shape-one{
+
+.shape-one {
     position: absolute;
     top: 0;
     left: -200px;
     z-index: -1;
 }
+
 .feature-item-wrap {
     display: flex;
     justify-content: space-between;
