@@ -404,6 +404,13 @@ a:hover {
     background: #E95142;
 }
 
+
+.section-title h3 {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+    margin: 0 0 35px;
+}
 .section-padding {
     padding: 80px 0;
 }
@@ -433,6 +440,10 @@ a:hover {
     background: #fff;
 }
 
+.header-bar-area.v2.sticky {
+    background: #000000;
+}
+
 .header-wrap {
     display: flex;
     justify-content: space-between;
@@ -442,20 +453,20 @@ a:hover {
 .logo {
     width: 30%;
 }
-.logo a{
+
+.logo a {
     display: block;
     transition: 0.3s;
 }
-.logo a img{
+
+.logo a img {
     transition: 0.6s;
 }
 
-.header-bar-area.sticky .logo a img {
-    max-width: 70px;
-}
 
 .main-menu {
-    width: 70% text-align: right;
+    width: 70%;
+    text-align: right;
 }
 
 .main-menu ul li {
@@ -479,38 +490,14 @@ a:hover {
     text-align: center;
     transition: 0.4s;
 }
-.header-bar-area.sticky  .main-menu ul li a {
-  
-    padding: 28px 0 0;
-}
+
 .main-menu ul li a.active {
     color: #fff;
 }
 
-.main-menu ul li a.active:before {
-    position: absolute;
-    top: -15px;
-    left: 0;
-    content: "";
-    background: #E95142;
-    width: 115px;
-    height: calc(100% + 45px);
-    z-index: -1;
+.header-bar-area.v2 .main-menu ul li a {
+    color: #fff;
 }
-
-.main-menu ul li a.active::after {
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    content: "";
-    background: transparent;
-    width: 0;
-    height: 0;
-    border-left: 57px solid transparent;
-    border-right: 57px solid transparent;
-    border-bottom: 13px solid #fff;
-}
-
 
 
 /*---------------------------------
@@ -658,3 +645,165 @@ a:hover {
     color: #fff;
     margin: 30px 0 0;
 }
+
+/*-----------------------------
+    Promo Page CSS
+-----------------------------*/
+.promo-area{
+    position: relative;
+}
+.shape-three{
+    position: absolute;
+    top: 5%;
+    right: 0;
+}
+.shape-four{
+    position: absolute;
+    top: 26%;
+    left: 0;
+}
+.shape-five{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.promo-hero-wrap {
+    position: relative;
+    background: #000000;
+    height: 1080px;
+}
+
+
+.shape-two {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.promo-hero-wrap .container {
+    height: 1080px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.promo-hero-content {
+    text-align: center;
+    height: 100%;
+}
+
+.promo-hero-content p {
+    color: #BCB3B3;
+    padding: 73px 0px;
+    position: relative;
+}
+
+.promo-hero-content img {
+    margin: 0 auto 40px;
+    display: block;
+    max-width: 700px;
+}
+
+.promo-hero-content p:before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: "";
+    background: #E95142;
+    width: 2px;
+    height: 45px;
+    transform: translateX(-50%);
+}
+
+.promo-hero-content p:after {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    content: "";
+    background: #E95142;
+    width: 2px;
+    height: 55px;
+    transform: translateX(-50%);
+}
+
+
+.promo-area {
+    padding: 100px 0 120px;
+}
+
+.promo-item {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 0 65px;
+}
+.promo-item.v1 {
+    justify-content: flex-start;
+}
+.promo-item.v2 {
+    justify-content: flex-end;
+}
+.promo-img {
+    width: 25%;
+}
+
+.promo-img img {
+    width: 100%;
+}
+
+.promo-text {
+    width: 40%;
+}
+
+.promo-item.v1 .promo-text {
+    margin: 0 0 0 40px;
+}
+.promo-item.v2 .promo-text {
+    margin: 0 40px 0 0;
+}
+.promo-text h4 {
+    font-size: 32px;
+    line-height: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0 0 20px;
+    padding: 0 0 20px;
+}
+
+.promo-text h4:after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    background: #E95142;
+    width: 140px;
+    height: 3px;
+}
+
+.promo-item.v1 .promo-text h4:after {
+    left: 0;
+}
+.promo-item.v2 .promo-text h4:after {
+    right: 0;
+}
+.promo-text p{
+    margin: 0;
+}
+.promo-item.v1 .promo-text h4,
+.promo-item.v1 .promo-text p {
+    text-align: left;
+}
+.promo-item.v2 .promo-text h4,
+.promo-item.v2 .promo-text p {
+    text-align: right;
+}
+/*-----------------------------
+    Promo Page CSS
+-----------------------------*/
+/*-----------------------------
+    Promo Page CSS
+-----------------------------*/
+/*-----------------------------
+    Promo Page CSS
+-----------------------------*/

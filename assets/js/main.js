@@ -18,6 +18,12 @@
             sticky.addClass('sticky');
         }
     });
+
+    $('.hamburger-menu').on('click',function(){
+        $(this).toggleClass('open');
+        $('.main-menu').toggleClass('open');
+
+    });
     /*=========================
       OwlCarousel START
     ===========================*/
