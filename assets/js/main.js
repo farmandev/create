@@ -19,7 +19,7 @@
         }
     });
 
-    $('.hamburger-menu').on('click',function(){
+    $('.hamburger-menu').on('click', function() {
         $(this).toggleClass('open');
         $('.main-menu').toggleClass('open');
 
@@ -58,6 +58,16 @@
 
 
     // });
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            items: 1,
+            slideSpeed: 2000,
+            autoplay: true,
+            thumbs: true,
+            thumbImage: true,
+            thumbContainerClass: 'owl-thumbs',
+            thumbItemClass: 'owl-thumb-item'
+        });
 
     /* -------------------------------------
                   Responsive menu
