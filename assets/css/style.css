@@ -597,8 +597,8 @@ input[type=number] {
 }
 
 .feature-item {
-    width: 23%;
-    padding: 20px;
+    width: 24%;
+    padding: 20px 15px;
     box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0);
     transition: 0.4s;
 }
@@ -614,7 +614,7 @@ input[type=number] {
 
 .feature-item a {
     display: block;
-    font-size: 19px;
+    font-size: 17px;
     line-height: 24px;
     font-weight: 700;
     margin: 20px 0;
@@ -1131,6 +1131,7 @@ input[type=number] {
     z-index: 0;
     visibility: hidden;
     opacity: 0;
+    transition: 0.3s;
 }
 
 #custCarousel .carousel-indicators li img {
