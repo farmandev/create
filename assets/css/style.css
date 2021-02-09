@@ -957,14 +957,20 @@ input[type=number] {
     z-index: -1;
 }
 
+
 /*-----------------------------
     Contact Page CSS
 -----------------------------*/
 .contact-wrap {
     position: relative;
-    padding: 80px 0;
+    padding: 70px 0;
+    margin: 220px 0 0;
 }
-
+.shape-20{
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+}
 .contact-wrap:before {
     position: absolute;
     top: 0;
@@ -978,8 +984,75 @@ input[type=number] {
 
 .contact-info {
     background-color: #fff;
+    padding: 100px 0 100px 55px;
+}
+.contact-info a{
+    display: block;
+    padding-left: 10px 0;
+}
+.contact-form h2 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 0 28px;
 }
 
+.contact-form p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+
+.contact-form h2 {
+    font-size: 36px;
+    line-height: 44px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 0 0 28px;
+}
+
+.contact-form p {
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.contact-form .form-group input {
+    width: 100%;
+    border: none;
+    background: #fff;
+    height: 70px;
+    padding: 10px 10px 10px 25px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s
+}
+.contact-form .form-group textarea {
+    width: 100%;
+    height: 150px;
+    border: none;
+    background: #fff;
+    padding: 10px 10px 10px 25px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s;
+    resize: none;
+}
+.contact-form .form-group input:focus,
+.contact-form .form-group textarea:focus {
+
+    box-shadow: 0 5px 14px #F6DDEB78;
+
+}
+
+.contact-form .form-group input::placeholder,
+.contact-form .form-group textarea::placeholder {
+    opacity: 1;
+}
 /*-----------------------------
     People Page CSS
 -----------------------------*/
