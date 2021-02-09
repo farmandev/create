@@ -1,7 +1,3 @@
-/* LG Device :992px. */
-
-@media only screen and (min-width: 1600px) {}
-
 @media only screen and (min-width: 1200px) and (max-width: 1439px) {
 
     .promo-hero-wrap,
@@ -263,7 +259,7 @@
         left: 0;
         content: "";
         background: #fff;
-        width: 54%;
+        width: 55%;
         height: 120px;
         z-index: -1;
         transform: rotate(-13deg);
@@ -441,12 +437,41 @@
         line-height: 24px;
     }
 
+    .contact-wrap::before {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 35%;
+    }
+
+    .contact-wrap {
+        padding: 50px 0;
+        margin: 20px 0 0;
+    }
+
+    .contact-form {
+        text-align: center;
+        margin: 0 0 90px;
+    }
+
+    .contact-form h2 {
+        font-size: 30px;
+        line-height: 30px;
+        margin: 0 0 25px;
+    }
+
+    .contact-info {
+        background-color: #fff;
+        padding: 60px 10px 50px;
+    }
+
+    .contact-info p,
+    .contact-info a {
+        font-size: 12px;
+    }
+
 }
-
-
-
-
-/* MD Device :768px. */
 
 @media only screen and (min-width: 768px) {
     .md-none {
@@ -455,7 +480,6 @@
 
 }
 
-/* Extra small Device. */
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .feature-item {
@@ -599,6 +623,9 @@
         height: 35px;
     }
 
+    .contact-wrap::before {
+        height: 30%;
+    }
 
 
 }
