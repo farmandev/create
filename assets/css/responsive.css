@@ -74,9 +74,30 @@
         height: 90px;
     }
 
-
 }
 
+@media only screen and (min-height: 768px) and (max-height: 1000px) and (min-width: 992px) and (max-width: 1199px) {
+    #custCarousel .carousel-indicators>li {
+        min-height: 94px;
+    }
+
+    .list-inline-item::before {
+        top: auto;
+        bottom: 0;
+
+    }
+}
+
+/*@media only screen and (min-height: 667px) and (min-width: 320px) {
+    #custCarousel .carousel-indicators>li {
+        min-height: 94px;
+    }
+
+    .list-inline-item::before {
+        top: auto;
+
+    }
+}*/
 @media only screen and (min-width: 992px) {
     .lg-none {
         display: none;
@@ -150,12 +171,6 @@
         padding: 0 20px;
     }
 
-    /*
-    .main-menu {
-        display: none;
-        visibility: hidden;
-        opacity: 0;
-    }*/
     .logo a img {
         max-width: 60px;
     }
@@ -168,7 +183,7 @@
         cursor: pointer;
     }
 
-    .hamburger-menu::before {
+    /*  .hamburger-menu::before {
         position: absolute;
         top: -32px;
         left: -15px;
@@ -190,7 +205,7 @@
         border-left: 35px solid transparent;
         border-right: 35px solid transparent;
         border-bottom: 12px solid #fff;
-    }
+    }*/
 
     .hamburger-menu.open::after {
         display: none;
@@ -205,10 +220,14 @@
         display: block;
         width: 30px;
         height: 3px;
-        background: #fff;
+        background: #000;
         margin: 4px;
         cursor: pointer;
         transition: 0.3s;
+    }
+    .header-bar-area.v2 .hamburger-menu span,
+    .hamburger-menu.open span{
+        background: #fff;
     }
 
     .hamburger-menu.open span:nth-child(2) {
@@ -223,16 +242,24 @@
         transform: rotate(45deg);
     }
 
-
-    .main-menu.open:before {
+    .main-menu:before {
         position: absolute;
         top: -15px;
-        left: 0;
+        left: -100%;
         content: "";
         background: #E95142;
         width: 100%;
-        height: 557px;
+        height: calc(100vh + 15px);
         z-index: -1;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0.3s;
+    }
+
+    .main-menu.open:before {
+        left: 0;
+        visibility: visible;
+        opacity: 1;
     }
 
     .main-menu ul {
@@ -240,7 +267,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        padding: 80px 0 168px;
+        padding: 100px 0 168px;
         visibility: hidden;
         opacity: 0;
         transition: 0.3s;
@@ -253,7 +280,7 @@
         opacity: 1;
     }
 
-    .main-menu ul::before {
+   /* .main-menu ul::before {
         position: absolute;
         bottom: -51px;
         left: 0;
@@ -277,7 +304,7 @@
         z-index: -1;
         transform: rotate(13deg);
         overflow: hidden;
-    }
+    }*/
 
     .main-menu ul li {
         display: block;
@@ -498,6 +525,13 @@
     }
 }
 
+@media only screen and (min-width: 660px) and (max-width: 767px) {
+    #custCarousel .carousel-indicators>li {
+        min-height: 52px!important;
+    }
+
+}
+
 @media only screen and (min-width: 320px) and (max-width: 767px) {
     .xs-none {
         display: none;
@@ -615,13 +649,13 @@
     }
 
     #custCarousel .carousel-indicators>li {
-        min-height: 40px;
+        min-height: 35px;
         margin: 0 1% 0;
     }
 
     .list-inline-item::before {
-        width: 35px;
-        height: 35px;
+        width: 100%;
+        height: 100%;
     }
 
     .contact-wrap::before {
