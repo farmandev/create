@@ -1203,6 +1203,7 @@ input[type=number] {
     font-size: 55px;
     line-height: 75px;
     font-family: "Rage";
+    text-transform: capitalize;
 }
 
 .people-name h5 {
