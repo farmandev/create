@@ -73,7 +73,10 @@
         padding: 70px 0 60px 30px;
     }
 
-
+    .list-inline-item::before {
+        width: 90px;
+        height: 90px;
+    }
 
 
 }
@@ -192,6 +195,7 @@
         border-right: 35px solid transparent;
         border-bottom: 12px solid #fff;
     }
+
     .hamburger-menu.open::after {
         display: none;
     }
@@ -226,12 +230,12 @@
 
     .main-menu.open:before {
         position: absolute;
-        top: 0;
+        top: -15px;
         left: 0;
         content: "";
         background: #E95142;
         width: 100%;
-        height: 95vh;
+        height: 82vh;
         z-index: -1;
     }
 
@@ -259,10 +263,10 @@
         left: 0;
         content: "";
         background: #fff;
-        width: 53%;
+        width: 54%;
         height: 120px;
         z-index: -1;
-        transform: rotate(-12deg);
+        transform: rotate(-13deg);
         overflow: hidden;
     }
 
@@ -272,25 +276,13 @@
         right: 0;
         content: "";
         background: #fff;
-        width: 53%;
+        width: 54%;
         height: 120px;
         z-index: -1;
-        transform: rotate(12deg);
+        transform: rotate(13deg);
         overflow: hidden;
     }
 
-    /* .main-menu ul::after {
-        position: absolute;
-        bottom: -30px;
-        left: 0;
-        content: "";
-        background: transparent;
-        width: 0;
-        height: 0;
-        border-left: 57px solid transparent;
-        border-right: 57px solid transparent;
-        border-bottom: 13px solid #fff;
-    }*/
 
     .main-menu ul li {
         display: block;
@@ -402,11 +394,52 @@
     .about-promo-content.v2 {
         padding: 60px 0 40px;
     }
-    .about-promo-content p{
+
+    .about-promo-content p {
         font-size: 14px;
         line-height: 28px;
     }
 
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none;
+    }
+
+    .carousel-inner {
+        padding: 0;
+    }
+
+    .people-wrap {
+        padding: 28px 0 50px;
+    }
+
+    .people-item {
+        box-shadow: none;
+        padding: 40px 15px;
+    }
+
+    .people-info {
+        margin: 0 0 27px;
+    }
+
+    .people-name {
+        margin-left: 12px;
+    }
+
+    .people-name h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .people-name h5 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    .people-brief p {
+        font-size: 14px;
+        line-height: 24px;
+    }
 
 }
 
@@ -428,6 +461,15 @@
     .feature-item {
         width: 48%;
         margin: 0 0 30px;
+    }
+
+    #custCarousel .carousel-indicators>li {
+        min-height: 73px;
+    }
+
+    .list-inline-item::before {
+        width: 70px;
+        height: 70px;
     }
 }
 
@@ -546,5 +588,17 @@
         transform: translateX(-50%);
         width: 180px;
     }
+
+    #custCarousel .carousel-indicators>li {
+        min-height: 40px;
+        margin: 0 1% 0;
+    }
+
+    .list-inline-item::before {
+        width: 35px;
+        height: 35px;
+    }
+
+
 
 }
