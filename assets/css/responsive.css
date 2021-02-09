@@ -419,12 +419,14 @@
     }
 
     .people-name {
-        margin-left: 12px;
+        margin-left: 5px;
+        width: 58%;
     }
 
     .people-name h2 {
         font-size: 24px;
         line-height: 30px;
+        margin: 0;
     }
 
     .people-name h5 {

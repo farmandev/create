@@ -1189,17 +1189,18 @@ input[type=number] {
 }
 
 .people-info img {
-    width: 38%;
+    width: 32%;
 }
 
 .people-name {
     text-align: left;
-    margin-left: 30px;
+    margin-left: 20px;
+    width: 65%;
 }
 
 .people-name h2 {
-    font-size: 60px;
-    line-height: 80px;
+    font-size: 55px;
+    line-height: 75px;
     font-family: "Rage";
 }
 
